@@ -6,6 +6,7 @@ This application is a simple maze game.
 
 - If using the Azure-hosted maze service, then no changes are needed.
 - If using a local version of the maze services, then update the `src/environments/url.json` file to point to the localhost services.
+- Run the command `npm install` to get the node modules required by this application
 
 ## Running the Application
 
