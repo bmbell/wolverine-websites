@@ -1,4 +1,4 @@
-# Wolverine
+# Maze Game
 
 This application is a simple maze game.
 
