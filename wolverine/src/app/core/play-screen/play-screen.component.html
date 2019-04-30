@@ -1,0 +1,8 @@
+<div class="wolverine-play-screen">
+  <wolverine-maze #maze [data]="mazeData" (solved)="onSolved()"></wolverine-maze>
+  <div class="button-bar">
+      <button mat-raised-button (click)="onSolveButtonClick()" [disabled]="isSolving || isSolved">Solve</button>
+      <button mat-raised-button (click)="onResetButtonClick()" [disabled]="isSolving">Reset</button>
+      <button mat-raised-button color="primary" (click)="onMainMenuButtonClick()">Main Menu</button>
+  </div>
+</div>

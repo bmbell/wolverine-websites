@@ -1,0 +1,10 @@
+<div class="wolverine-layout">
+  <div class="header">
+    <h1>Maze Game</h1>
+  </div>
+  <div class="content">
+    <wolverine-difficulty-screen *ngIf="!difficultyWasSet"></wolverine-difficulty-screen>
+    <wolverine-play-screen *ngIf="difficultyWasSet"></wolverine-play-screen>
+    <!-- <router-outlet></router-outlet> -->
+  </div>
+</div>

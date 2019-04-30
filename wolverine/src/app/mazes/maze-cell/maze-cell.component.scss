@@ -1,0 +1,78 @@
+
+$grid-border-color: black;
+$cell-height: 25px;
+$cell-width: 25px;
+
+.wolverine-maze-cell {
+
+  position: relative;
+  box-sizing: border-box;
+  height: $cell-height;
+  width: $cell-width;
+  user-select: none;
+
+  border: 1px solid $grid-border-color;
+
+  &.north {
+    border-top: 0;
+  }
+
+  &.south {
+    border-bottom:0;
+  }
+
+  &.east {
+    border-right: 0;
+  }
+
+  &.west {
+    border-left: 0;
+  }
+
+  .cell-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    .player-token {
+      position: absolute;
+      height: $cell-height;
+      width: $cell-width;
+    }
+
+    .maze-icon {
+      color: #80CBC4;
+      height: $cell-height;
+      width: $cell-width;
+    }
+  }
+
+  .corner {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background-color: $grid-border-color;
+
+    &.north-west {
+      top: 0;
+      left: 0;
+    }
+
+    &.north-east {
+      top: 0;
+      right: 0;
+    }
+
+    &.south-east {
+      bottom: 0;
+      right: 0;
+    }
+
+    &.south-west {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.wolverine-layout {
+
+  margin: 0 auto;
+  max-width: 1020px;
+  min-width: 520px;
+  padding: 32px;
+
+  .header,
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+}

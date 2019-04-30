@@ -1,0 +1,18 @@
+<div class="loading-indicator" *ngIf="isLoading">
+  <mat-spinner [diameter]="20"></mat-spinner>
+  <span>Loading...</span>
+</div>
+<div class="wolverine-maze" *ngIf="!isLoading">
+  <div class="status-bar">
+    <div><span *ngIf="isSolving">Solving...</span>&nbsp;</div>
+    <mat-progress-bar mode="indeterminate" *ngIf="isSolving"></mat-progress-bar>
+  </div>
+  <table>
+    <tr *ngFor="let row of rows; let y = index">
+      <td *ngFor="let cell of row; let x = index">
+        <wolverine-maze-cell [id]="cell.id" [passages]="cell.passages" [hasPlayerToken]="hasPlayerToken(cell)" [isExit]="isExit(cell)" >
+        </wolverine-maze-cell>
+      </td>
+    </tr>
+  </table>
+</div>

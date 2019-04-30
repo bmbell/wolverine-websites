@@ -1,0 +1,15 @@
+<div class="wolverine-maze-cell" [class.north]="canMoveNorth" [class.south]="canMoveSouth"
+  [class.east]="canMoveEast" [class.west]="canMoveWest" >
+  <div class="cell-content">
+    <span class="maze-icon" *ngIf="isExit">
+      <mat-icon>exit_to_app</mat-icon>
+    </span>
+    <div class="player-token">
+      <mat-icon *ngIf="hasPlayerToken">directions_walk</mat-icon>
+    </div>
+  </div>
+  <div class="corner north-west" *ngIf="canMoveNorth && canMoveWest"></div>
+  <div class="corner north-east" *ngIf="canMoveNorth && canMoveEast"></div>
+  <div class="corner south-east" *ngIf="canMoveSouth && canMoveEast"></div>
+  <div class="corner south-west" *ngIf="canMoveSouth && canMoveWest"></div>
+</div>
