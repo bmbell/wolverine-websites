@@ -21,7 +21,7 @@ This application is a simple maze game.
 
 ## Running the Unit Tests
 
-- Type the command `ng test common` to run the common library unit tsts.
+- Type the command `ng test common` to run the common library unit tests.
 - Type the command `ng test` to test run the main program's unit tests.
 
 ## Running End-to-End Tests
